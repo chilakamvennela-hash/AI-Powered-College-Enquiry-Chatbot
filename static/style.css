@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--navy:#142b4a;--blue:#2864dc;--blue2:#4b83f2;--ink:#18253a;--muted:#7b8798;--line:#e8edf4;--bg:#f3f6fb;--white:#fff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);font-family:'DM Sans',sans-serif;color:var(--ink);display:grid;place-items:center;padding:28px}
+.app-shell{width:min(1180px,100%);height:min(820px,calc(100vh - 56px));min-height:0;display:grid;grid-template-columns:350px 1fr;background:var(--white);border-radius:26px;overflow:hidden;box-shadow:0 24px 80px rgba(28,52,88,.13)}
+.intro-panel{background:linear-gradient(155deg,#142b4a 0%,#1c4778 58%,#2864a6 100%);color:white;padding:48px 38px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.intro-panel:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-180px;bottom:90px;box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 75px rgba(255,255,255,.025)}
+.brand-mark{width:66px;height:66px;border-radius:20px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:32px;margin-bottom:45px;border:1px solid rgba(255,255,255,.18)}
+.eyebrow{font-size:11px;letter-spacing:2.4px;font-weight:700;color:#a9c9ff;margin:0 0 13px}
+.intro-panel h1{font:800 34px/1.18 'Manrope',sans-serif;margin:0 0 18px;letter-spacing:-1.1px}
+.intro-copy{font-size:14px;line-height:1.8;color:#d0def0;max-width:260px;margin:0}
+.intro-card{display:flex;align-items:center;gap:12px;margin-top:55px;padding:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.13);border-radius:14px;position:relative;z-index:1}
+.intro-card strong,.intro-card small{display:block}.intro-card strong{font-size:13px}.intro-card small{font-size:11px;color:#c0d4ee;margin-top:4px}
+.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#35d39a;box-shadow:0 0 0 4px rgba(53,211,154,.13);flex:none}
+.intro-footer{margin-top:auto;padding-top:35px;color:#a9c1df;font-size:11px;position:relative;z-index:1}
+.chat-panel{min-width:0;min-height:0;display:flex;flex-direction:column;background:#fff}
+.chat-header{height:88px;padding:0 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:13px}
+.avatar,.message-avatar{width:42px;height:42px;border-radius:14px;background:#eaf1ff;display:grid;place-items:center;font-size:21px;flex:none}
+.header-copy{flex:1;min-width:0}.header-copy h2{font:700 15px 'Manrope',sans-serif;margin:0 0 6px}.header-copy span{font-size:11px;color:var(--muted)}.header-copy .status-dot{width:6px;height:6px;margin-right:5px}
+.clear-button{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 12px;color:#68758a;font:600 11px 'DM Sans';cursor:pointer;transition:.2s}.clear-button:hover{border-color:#f0a3a3;color:#d34b4b;background:#fff8f8}
+.chat-content{flex:1;min-height:0;display:flex;flex-direction:column;padding:24px 30px 12px}
+.messages{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:20px;padding:4px 4px 18px;scroll-behavior:smooth}
+.message{display:flex;gap:10px;max-width:88%;animation:rise .25s ease both}.user-message{align-self:flex-end;flex-direction:row-reverse}.message-avatar{width:32px;height:32px;border-radius:11px;font-size:16px}
+.bubble-wrap{display:flex;flex-direction:column;gap:6px;min-width:0}.bubble{padding:13px 16px;border-radius:4px 15px 15px 15px;background:#f1f4f9;color:#344257;font-size:13px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
+.user-message .bubble{background:var(--blue);color:white;border-radius:15px 4px 15px 15px}.bubble-wrap time{font-size:10px;color:#a1aaba;padding:0 3px}.user-message .bubble-wrap time{text-align:right}
+.suggestion-area{padding:13px 0 9px;border-top:1px solid #f0f2f6}.suggestion-area p{font-size:11px;color:#8b96a6;margin:0 0 10px}.suggestions{display:flex;gap:8px;flex-wrap:wrap}.suggestion-chip{border:1px solid #dce6f8;color:#3865ad;background:#f8faff;border-radius:20px;padding:8px 11px;font:500 10px 'DM Sans';cursor:pointer;transition:.2s}.suggestion-chip:hover{background:#eaf1ff;border-color:#a9c3f1}
+.composer{margin:0 30px;padding:9px 9px 9px 17px;border:1px solid #e2e8f1;border-radius:14px;display:flex;gap:10px;box-shadow:0 5px 18px rgba(25,55,100,.045)}
+.composer:focus-within{border-color:#9dbaf0;box-shadow:0 0 0 3px rgba(40,100,220,.08)}.composer input{border:0;outline:0;flex:1;min-width:0;font:13px 'DM Sans';color:var(--ink)}.composer input::placeholder{color:#aab3c0}
+.composer button{border:0;border-radius:10px;background:var(--blue);color:white;padding:0 17px;display:flex;align-items:center;gap:10px;font:600 12px 'DM Sans';cursor:pointer;transition:.2s}.composer button:hover{background:#174fbf;transform:translateY(-1px)}.composer button:disabled{opacity:.6;cursor:wait;transform:none}
+.disclaimer{text-align:center;color:#a4adba;font-size:9px;margin:12px 25px 16px}
+.typing{display:flex;gap:4px;padding:16px}.typing span{width:6px;height:6px;background:#9ba9bc;border-radius:50%;animation:bounce .8s infinite alternate}.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@keyframes bounce{to{transform:translateY(-5px);opacity:.5}}
+@media(max-width:800px){body{padding:0;background:#fff}.app-shell{min-height:100vh;border-radius:0;grid-template-columns:1fr}.intro-panel{display:none}.chat-header{height:76px;padding:0 18px}.chat-content{padding:18px 16px 10px}.composer{margin:0 16px}.message{max-width:95%}.disclaimer{line-height:1.5;margin-bottom:12px}}
+@media(max-width:420px){.clear-button{padding:8px;font-size:10px}.header-copy h2{font-size:13px}.suggestion-chip{font-size:10px}.composer button{padding:0 12px}.composer button span{display:none}}
+@media(max-width:800px){
+  .app-shell{
+    height:100dvh;
+    min-height:0;
+  }
+}

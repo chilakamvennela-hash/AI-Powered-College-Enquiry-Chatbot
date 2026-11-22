@@ -1,0 +1,270 @@
+
+{
+  "college": {
+    "name": "Sapthagiri NPS University",
+    "short_name": "SNPSU",
+    "address": "#14/5, Chikkasandra, Hesaraghatta Main Road, Bengaluru, Karnataka, India",
+    "phone": "9900072632",
+    "email": "admissions@snpsu.edu.in",
+    "website": "https://snpsu.edu.in/",
+    "office_hours": "Please contact the university for current office hours"
+  },
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "good evening", "namaste"],
+      "responses": ["Hello! Welcome to Sapthagiri NPS University. How can I help you with your university enquiry today?"]
+    },
+    {
+      "tag": "university_name",
+      "patterns": [
+        "what is the name of your university",
+        "what is your university name",
+        "which university is this",
+        "tell me your university name",
+        "what is the university called",
+        "name of the university",
+        "what is the name of this college",
+        "which college is this"
+      ],
+      "responses": ["The name of our university is Sapthagiri NPS University (SNPSU). Visit https://snpsu.edu.in/ for more information."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "thank you bye"],
+      "responses": ["Thank you for contacting Sapthagiri NPS University. Have a great day!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "many thanks"],
+      "responses": ["You're welcome! Feel free to ask if you need any other information about Sapthagiri NPS University."]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "how can I apply for admission",
+        "admission process",
+        "how to get admission",
+        "where can I apply",
+        "when do admissions start",
+        "admission details",
+        "application procedure",
+        "I want to join this university",
+        "what should I do to join this university",
+        "how do I join this university",
+        "how can I join your university",
+        "I want to study at this university",
+        "I want to get admission in this university",
+        "how can I become a student here",
+        "how do I enroll in this university",
+        "what are the steps to enroll",
+        "how to apply to this college",
+        "I am interested in joining this university",
+        "I want to take admission",
+        "tell me the admission procedure"
+      ],
+     "responses": [
+       "The admission process at Sapthagiri NPS University includes four stages: online application, interview for eligible candidates, selection based on entrance results and interviews, and submission of required documents along with fee payment. Visit https://snpsu.edu.in/admissions/ for current admission details."
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": [
+        "what is the eligibility for admission",
+        "eligibility criteria",
+        "who can apply",
+        "minimum qualification required",
+        "required marks for admission",
+        "I have completed my 12th standard am I eligible to apply",
+        "I passed 12th standard can I apply",
+        "can students who passed 12th apply",
+        "what are the eligibility requirements",
+        "am I eligible for undergraduate admission",
+        "what qualifications are required after 12th",
+        "I completed intermediate am I eligible",
+        "what is the minimum percentage required",
+        "do I need an entrance exam for admission",
+        "what qualifications do I need to join",
+        "eligibility for undergraduate courses"
+      ],
+      "responses": [ "Eligibility requirements vary depending on the programme. Certain programmes may require entrance examinations, while others may consider merit. Please check the official eligibility information at https://snpsu.edu.in/admissionelgibility or contact admissions at 9900072632."]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "what courses are available",
+        "list of courses",
+        "which programs do you offer",
+        "available degrees",
+        "courses offered by university",
+        "what can I study",
+        "what courses do you offer"
+      ],
+      "responses": ["Sapthagiri NPS University offers undergraduate, postgraduate and doctoral programmes across Engineering and Technology, Management Studies, Applied Sciences, Medicine and Health Sciences. Visit https://snpsu.edu.in/ to explore the available programmes."]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+        "what departments are there",
+        "list departments",
+        "which schools are available",
+        "department information",
+        "what faculties are available"
+      ],
+      "responses": ["The university includes the School of Engineering and Technology, School of Management Studies, School of Applied Sciences, and School of Medicine and Health Sciences."]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "what is the fee structure",
+        "college fees",
+        "how much is the tuition fee",
+        "course fee details",
+        "payment of fees"
+      ],
+      "responses": ["Programme fees vary depending on the course. You can view the official fee structure here: https://snpsu.edu.in/uploads/admission/fees%20structure%20Soft%20copy_20260411032304.pdf. For confirmation, contact admissions at 9900072632."]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "when are exams conducted",
+        "exam schedule",
+        "examination details",
+        "internal exams",
+        "semester exam dates",
+        "where can I find timetable"
+      ],
+      "responses": ["For examination schedules, results and notifications, visit the official university website at https://snpsu.edu.in/ and check the Examination section."]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "what scholarships are available",
+        "scholarship details",
+        "financial aid",
+        "fee reimbursement",
+        "merit scholarship",
+        "how to apply for scholarship"
+      ],
+      "responses": ["Sapthagiri NPS University provides information about merit-based and need-based scholarships for eligible students. Check https://snpsu.edu.in/admission_content/ScholarshipUniversity for scholarship details and eligibility."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "is hostel available",
+        "hostel facilities",
+        "accommodation for students",
+        "girls hostel",
+        "boys hostel",
+        "hostel fee",
+        "can I stay on campus",
+        "I am coming from another city can I stay on campus",
+        "does the university provide accommodation",
+        "is accommodation available for outstation students",
+        "can students live in the university hostel",
+        "where can students stay",
+        "does the university have residential facilities",
+        "is there a student residence",
+        "can I stay in the university campus",
+        "are hostel rooms available",
+        "living facilities for students",
+        "hostel facility for students from other cities"
+      ],
+      "responses": ["Yes. Sapthagiri NPS University provides hostel facilities for both boys and girls. Facilities listed on the university website include food, security, Wi-Fi and recreational areas. Contact the university for current availability and charges."]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "is bus facility available",
+        "college transportation",
+        "bus routes",
+        "transport facility",
+        "college bus timings",
+        "how do I travel to university"
+      ],
+      "responses": ["For current transportation routes, stops, timings and charges, please contact the university at 9900072632 or visit https://snpsu.edu.in/."]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "does university have a library",
+        "library facilities",
+        "books available",
+        "digital library",
+        "library timings"
+      ],
+      "responses": ["The university website lists library and digital learning resources among its campus facilities. For library timings, membership and borrowing information, contact the university."]
+    },
+    {
+      "tag": "laboratory",
+      "patterns": [
+        "what lab facilities are available",
+        "laboratories",
+        "computer lab",
+        "science labs",
+        "lab equipment",
+        "practical facilities"
+      ],
+      "responses": ["Sapthagiri NPS University describes modern laboratories and programme-specific facilities supporting practical learning and research. For details about a particular department's laboratories, contact the relevant school."]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "who are the faculty members",
+        "faculty details",
+        "teaching staff",
+        "professors in university",
+        "hod details",
+        "department faculty"
+      ],
+      "responses": ["For faculty names, qualifications and department information, please visit https://snpsu.edu.in/ or contact the university administration."]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "placement details",
+        "does university provide placements",
+        "companies visiting campus",
+        "placement statistics",
+        "career support",
+        "internship opportunities",
+        "will the university help me get a job after graduation",
+        "job opportunities after graduation",
+        "career opportunities after graduation",
+        "does the university help students find jobs",
+        "will I get placement assistance",
+        "how can I get a job through campus placements",
+        "does the university provide job placements",
+        "campus recruitment opportunities",
+        "career guidance for getting a job",
+        "employment opportunities for graduates"
+
+      ],
+      "responses": ["Sapthagiri NPS University has a placement division that supports career guidance, training, recruitment drives and industry interactions. Visit https://snpsu.edu.in/hrd for placement and career support information. Confirm current placement statistics directly with the university."
+  ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "college contact number",
+        "how can I contact university",
+        "university email address",
+        "university address",
+        "where is the university located",
+        "office timings"
+      ],
+      "responses": ["Sapthagiri NPS University is located at #14/5, Chikkasandra, Hesaraghatta Main Road, Bengaluru, Karnataka, India. Phone: 9900072632. Admissions: 080-28372800 / 080-29633636. Email: admissions@snpsu.edu.in. Website: https://snpsu.edu.in/."]
+    },
+    {
+      "tag": "faq",
+      "patterns": [
+        "how do I get a bonafide certificate",
+        "how to get transfer certificate",
+        "documents required for joining",
+        "where do I submit certificates",
+        "how can I get a student id card"
+      ],
+      "responses": ["For bonafide certificates, transfer certificates, joining documents and student ID cards, please contact the university administration or visit https://snpsu.edu.in/ for the latest instructions."]
+    }
+  ]
+}

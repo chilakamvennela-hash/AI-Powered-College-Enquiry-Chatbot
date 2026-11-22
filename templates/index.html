@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI-powered college enquiry chatbot">
+  <title>{{ college_name }} | Enquiry Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="intro-panel">
+      <div class="brand-mark" aria-label="College logo placeholder">🎓</div>
+      <p class="eyebrow">STUDENT SUPPORT</p>
+      <h1>{{ college_name }}</h1>
+      <p class="intro-copy">Your virtual college assistant. Ask questions and get information about academics, admissions and campus life.</p>
+      <div class="intro-card">
+        <span class="status-dot"></span>
+        <div><strong>Assistant online</strong><small>Here to help you 24/7</small></div>
+      </div>
+      <div class="intro-footer">Powered by Python · NLP · Machine Learning</div>
+    </aside>
+
+    <section class="chat-panel" aria-label="College enquiry chat">
+      <header class="chat-header">
+        <div class="avatar">🤖</div>
+        <div class="header-copy"><h2>College Enquiry Assistant</h2><span><i class="status-dot"></i> Typically replies instantly</span></div>
+        <button id="clearButton" class="clear-button" type="button" title="Clear chat">Clear chat</button>
+      </header>
+
+      <div class="chat-content">
+        <div id="messages" class="messages" aria-live="polite">
+          <article class="message bot-message">
+            <div class="message-avatar">🤖</div>
+            <div class="bubble-wrap"><div class="bubble">Hello! 👋 Welcome to {{ college_name }}. I'm your college enquiry assistant. How can I help you today?</div><time>Now</time></div>
+          </article>
+        </div>
+        <div class="suggestion-area" id="suggestionArea">
+          <p>Not sure what to ask? Try one of these:</p>
+          <div class="suggestions">
+            {% for question in suggested_questions %}
+              <button class="suggestion-chip" type="button">{{ question }}</button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <form id="chatForm" class="composer">
+        <label class="sr-only" for="messageInput">Type your question</label>
+        <input id="messageInput" type="text" maxlength="1000" placeholder="Type your question here..." autocomplete="off" required>
+        <button id="sendButton" type="submit" aria-label="Send message"><span>Send</span><b>➤</b></button>
+      </form>
+      <p class="disclaimer">AI-powered answers are based on the sample college knowledge base. Verify official dates and fees with the college.</p>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
